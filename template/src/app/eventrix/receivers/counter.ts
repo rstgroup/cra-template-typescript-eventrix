@@ -6,7 +6,7 @@ import {
     FETCH_COUNTER,
 } from '../eventsNames/counter';
 import { fetchCount } from '../../api/counter';
-import { CounterI } from '../index';
+import { CounterI } from '../../../interfaces/store';
 
 const incrementCounterReceiver = new EventsReceiver<void>(
     INCREMENT_COUNTER,

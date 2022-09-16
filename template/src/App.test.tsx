@@ -6,7 +6,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   const { getByText } = render(
-    <EventrixProvider store={eventrix}>
+    <EventrixProvider eventrix={eventrix}>
       <App />
     </EventrixProvider>
   );

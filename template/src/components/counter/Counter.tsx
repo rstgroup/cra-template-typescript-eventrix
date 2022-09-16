@@ -9,9 +9,9 @@ import {
 } from '../../app/eventrix/eventsNames/counter';
 
 export function Counter() {
-  const count = useEventrixState<number>('counter.value');
-  const emit = useEmit();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+  const [count] = useEventrixState<number>('counter.value');
+  const emit = useEmit<undefined | number>();
+  const [incrementAmount, setIncrementAmount] = useState<string>('2');
 
   const incrementValue = Number(incrementAmount) || 0;
 
